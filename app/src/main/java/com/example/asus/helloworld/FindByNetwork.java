@@ -22,6 +22,7 @@ import android.widget.Toast;
 public class FindByNetwork extends AppCompatActivity {
     private WebView webView;
     private SwipeRefreshLayout swipeLayout;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,6 +35,7 @@ public class FindByNetwork extends AppCompatActivity {
         webView.loadUrl("https://wapbaike.baidu.com/item/" + content);
         refreshPage();
     }
+
     private void initWebView() {
         WebSettings settings = webView.getSettings();
         settings.setJavaScriptEnabled(true);
@@ -44,7 +46,7 @@ public class FindByNetwork extends AppCompatActivity {
         webView.setWebViewClient(new WebViewClient());  //不通过浏览器打开子链接
     }
 
-    private void refreshPage(){
+    private void refreshPage() {
         swipeLayout.setColorSchemeResources(R.color.holo_blue_bright,
                 R.color.holo_green_light, R.color.holo_orange_light,
                 R.color.holo_red_light);
@@ -56,7 +58,7 @@ public class FindByNetwork extends AppCompatActivity {
             }
         });
         //设置进度条
-        webView.setWebChromeClient(new WebChromeClient(){
+        webView.setWebChromeClient(new WebChromeClient() {
             @Override
             public void onProgressChanged(WebView view, int newProgress) {
                 if (newProgress == 100) {
@@ -70,20 +72,21 @@ public class FindByNetwork extends AppCompatActivity {
             }
         });
     }
+
     //实现返回键返回上层浏览界面
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_BACK && event.getAction() == KeyEvent.ACTION_DOWN) {
-            if(webView.canGoBack()){
+            if (webView.canGoBack()) {
                 webView.goBack();
                 return true;
-            }
-            else{
+            } else {
                 finish();
                 return true;
             }
         }
-         return super.onKeyDown(keyCode, event);
+        return super.onKeyDown(keyCode, event);
     }
+
     //实现向后滑动返回上一层浏览界面
     //手指上下滑动时的最小速度
     private static final int YSPEED_MIN = 1000;
@@ -119,10 +122,10 @@ public class FindByNetwork extends AppCompatActivity {
                 break;
             case MotionEvent.ACTION_MOVE:
                 xMove = event.getRawX();
-                yMove= event.getRawY();
+                yMove = event.getRawY();
                 //滑动的距离
                 int distanceX = (int) (xMove - xDown);
-                int distanceY= (int) (yMove - yDown);
+                int distanceY = (int) (yMove - yDown);
                 //获取瞬时速度
                 int ySpeed = getScrollVelocity();
                 //关闭Activity(后退)需满足以下条件：
@@ -130,10 +133,10 @@ public class FindByNetwork extends AppCompatActivity {
                 //2.y轴滑动的距离在YDISTANCE_MIN范围内
                 //3.y轴上（即上下滑动的速度）<XSPEED_MIN，如果大于，则认为用户意图是在上下滑动而非左滑结束Activity
 
-                if(distanceX > XDISTANCE_MIN &&(distanceY<YDISTANCE_MIN&&distanceY>-YDISTANCE_MIN)&& ySpeed < YSPEED_MIN) {
-                        if (webView.canGoBack())
-                            webView.goBack();
-                        else finish();
+                if (distanceX > XDISTANCE_MIN && (distanceY < YDISTANCE_MIN && distanceY > -YDISTANCE_MIN) && ySpeed < YSPEED_MIN) {
+                    if (webView.canGoBack())
+                        webView.goBack();
+                    else finish();
                 }
                 break;
             case MotionEvent.ACTION_UP:
@@ -144,16 +147,19 @@ public class FindByNetwork extends AppCompatActivity {
         }
         return super.dispatchTouchEvent(event);
     }
+
     private void createVelocityTracker(MotionEvent event) {
         if (mVelocityTracker == null) {
             mVelocityTracker = VelocityTracker.obtain();
         }
         mVelocityTracker.addMovement(event);
     }
+
     private void recycleVelocityTracker() {
         mVelocityTracker.recycle();
         mVelocityTracker = null;
     }
+
     private int getScrollVelocity() {
         mVelocityTracker.computeCurrentVelocity(1000);
         int velocity = (int) mVelocityTracker.getYVelocity();

@@ -27,6 +27,7 @@ public class AskFragment extends Fragment {
     private ProgressBar web_progress_bar;
     public static final String ENTRANCE_URL_LOGIN = "https://m.myzx.cn/user/login/index/referer"; //登陆url
     public static final String ENTRANCE_URL_HOME = "https://m.myzx.cn/wenzhen/question/createquestiondisplay"; //登陆后调整的url
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -41,7 +42,8 @@ public class AskFragment extends Fragment {
         web_progress_bar = (ProgressBar) activity.findViewById(R.id.progress_bar);
         initWebView();
     }
-    private void initWebView(){
+
+    private void initWebView() {
         CookieSyncManager.createInstance(getContext());
         CookieManager cookieManager = CookieManager.getInstance();
         String CookieStr = cookieManager.getCookie(ENTRANCE_URL_HOME); //获取cookie
@@ -49,13 +51,12 @@ public class AskFragment extends Fragment {
         settings.setJavaScriptEnabled(true);
         settings.setCacheMode(WebSettings.LOAD_DEFAULT);
         webView.setWebViewClient(new WebViewClient());
-        webView.setWebChromeClient(new WebChromeClient(){
+        webView.setWebChromeClient(new WebChromeClient() {
             @Override
             public void onProgressChanged(WebView view, int newProgress) {
-                if(newProgress==100){
+                if (newProgress == 100) {
                     web_progress_bar.setVisibility(View.GONE);//加载完网页进度条消失
-                }
-                else{
+                } else {
                     web_progress_bar.setVisibility(View.VISIBLE);//开始加载网页时显示进度条
                     web_progress_bar.setProgress(newProgress);//设置进度值
                 }
@@ -67,13 +68,14 @@ public class AskFragment extends Fragment {
             webView.loadUrl(ENTRANCE_URL_HOME);
         }
     }
+
     boolean isExit;
+
     public void goBack() {
         //其中webView.canGoBack()在webView含有一个可后退的浏览记录时返回true
-        if (webView.canGoBack()){
+        if (webView.canGoBack()) {
             webView.goBack();
-        }
-        else{
+        } else {
             if (!isExit) {
                 isExit = true;
                 Toast.makeText(getContext(), "再按一次退出程序",

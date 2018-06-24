@@ -22,6 +22,7 @@ public class FindDiseaseFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         return inflater.inflate(R.layout.find_disease_fragment, container, false);
     }
+
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
@@ -31,9 +32,9 @@ public class FindDiseaseFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 String content = editText.getText().toString();
-                if(content==null||"".equals(content)){
-                    Toast.makeText(getContext(),"输入不能为空！",Toast.LENGTH_SHORT).show();
-                }else {
+                if ("".equals(content)) {
+                    Toast.makeText(getContext(), "输入不能为空！", Toast.LENGTH_SHORT).show();
+                } else {
                     Toast.makeText(getContext(), "搜索中...", Toast.LENGTH_LONG).show();
                     Intent intent = new Intent();
                     intent.setClass(getContext(), FindByNetwork.class);

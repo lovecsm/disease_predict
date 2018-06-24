@@ -1,0 +1,54 @@
+[
+    {
+        "merged": "E:\\StudioProjects\\Helloworld\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\ic_rate.png",
+        "source": "E:\\StudioProjects\\Helloworld\\app\\src\\main\\res\\mipmap-hdpi\\ic_rate.png"
+    },
+    {
+        "merged": "E:\\StudioProjects\\Helloworld\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\ic_about.png",
+        "source": "E:\\StudioProjects\\Helloworld\\app\\src\\main\\res\\mipmap-hdpi\\ic_about.png"
+    },
+    {
+        "merged": "E:\\StudioProjects\\Helloworld\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\ic_search_disease.png",
+        "source": "E:\\StudioProjects\\Helloworld\\app\\src\\main\\res\\mipmap-hdpi\\ic_search_disease.png"
+    },
+    {
+        "merged": "E:\\StudioProjects\\Helloworld\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\ic_launcher_round.png",
+        "source": "E:\\StudioProjects\\Helloworld\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "E:\\StudioProjects\\Helloworld\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\start_icon.png",
+        "source": "E:\\StudioProjects\\Helloworld\\app\\src\\main\\res\\mipmap-hdpi\\start_icon.png"
+    },
+    {
+        "merged": "E:\\StudioProjects\\Helloworld\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\start_app.png",
+        "source": "E:\\StudioProjects\\Helloworld\\app\\src\\main\\res\\mipmap-hdpi\\start_app.png"
+    },
+    {
+        "merged": "E:\\StudioProjects\\Helloworld\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\ic_share.png",
+        "source": "E:\\StudioProjects\\Helloworld\\app\\src\\main\\res\\mipmap-hdpi\\ic_share.png"
+    },
+    {
+        "merged": "E:\\StudioProjects\\Helloworld\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\ic_launcher.png",
+        "source": "E:\\StudioProjects\\Helloworld\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\StudioProjects\\Helloworld\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\ic_search.png",
+        "source": "E:\\StudioProjects\\Helloworld\\app\\src\\main\\res\\mipmap-hdpi\\ic_search.png"
+    },
+    {
+        "merged": "E:\\StudioProjects\\Helloworld\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\ic_find.png",
+        "source": "E:\\StudioProjects\\Helloworld\\app\\src\\main\\res\\mipmap-hdpi\\ic_find.png"
+    },
+    {
+        "merged": "E:\\StudioProjects\\Helloworld\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\ic_settings.png",
+        "source": "E:\\StudioProjects\\Helloworld\\app\\src\\main\\res\\mipmap-hdpi\\ic_settings.png"
+    },
+    {
+        "merged": "E:\\StudioProjects\\Helloworld\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\ic_menu.png",
+        "source": "E:\\StudioProjects\\Helloworld\\app\\src\\main\\res\\mipmap-hdpi\\ic_menu.png"
+    },
+    {
+        "merged": "E:\\StudioProjects\\Helloworld\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\nav_icon.png",
+        "source": "E:\\StudioProjects\\Helloworld\\app\\src\\main\\res\\mipmap-hdpi\\nav_icon.png"
+    }
+]

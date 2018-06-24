@@ -1,0 +1,6 @@
+COMMAND=PREDEX_LIBRARY_TO_DEX_ARCHIVE
+FILE_PATH=E:\StudioProjects\Helloworld\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar
+FILE_HASH=ba5718ae0c681f02c7de37c7a74dcc4feb575b89
+DX_VERSION=1.13
+JUMBO_MODE=true
+OPTIMIZE=true

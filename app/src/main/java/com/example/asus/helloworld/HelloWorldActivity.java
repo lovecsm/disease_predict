@@ -14,13 +14,15 @@ import android.support.v7.widget.Toolbar;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 public class HelloWorldActivity extends AppCompatActivity {
     private DrawerLayout mDrawerLayout;
-
+    private ProgressBar web_progress_bar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,7 +33,7 @@ public class HelloWorldActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         NavigationView navView = (NavigationView) findViewById(R.id.nav_view);
-
+        web_progress_bar = (ProgressBar) findViewById(R.id.progress_bar);
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {
             actionBar.setDisplayHomeAsUpEnabled(true);
@@ -54,6 +56,7 @@ public class HelloWorldActivity extends AppCompatActivity {
                             toolbar.setSubtitle("依据症状预测疾病");
                         }
                         replaceFragment(new PredictFragment());
+                        web_progress_bar.setVisibility(View.GONE);//进度条消失
                         break;
                     case R.id.nav_ask:
                         //TODO:咨询医师
@@ -70,6 +73,7 @@ public class HelloWorldActivity extends AppCompatActivity {
                             toolbar.setSubtitle("疑难杂症在这里查");
                         }
                         replaceFragment(new FindDiseaseFragment());
+                        web_progress_bar.setVisibility(View.GONE);//进度条消失
                         break;
                     case R.id.nav_knowledge:
                         //TODO:养身知识
@@ -78,12 +82,14 @@ public class HelloWorldActivity extends AppCompatActivity {
                             toolbar.setSubtitle("保养身心预防疾病");
                         }
                         replaceFragment(new HealthKnowledge());
+                        web_progress_bar.setVisibility(View.GONE);//进度条消失
                         break;
                     case R.id.nav_about:
                         //TODO:关于
                         if (toolbar != null) {
                             toolbar.setTitle("疾病预测");
                             toolbar.setSubtitle("关于作者");
+                            web_progress_bar.setVisibility(View.GONE);//进度条消失
                         }
                         replaceFragment(new AboutFragment());
                         break;
@@ -129,7 +135,9 @@ public class HelloWorldActivity extends AppCompatActivity {
         transaction.replace(R.id.right_layout, fragment);
         transaction.commit();
     }
-boolean isExit;
+
+    boolean isExit;
+
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_BACK && event.getAction() == KeyEvent.ACTION_DOWN) {
@@ -137,8 +145,7 @@ boolean isExit;
             if (current instanceof AskFragment) {
                 ((AskFragment) current).goBack();
                 return true;
-            }
-            else{
+            } else {
                 if (!isExit) {
                     isExit = true;
                     Toast.makeText(getApplicationContext(), "再按一次退出程序",
@@ -160,8 +167,7 @@ boolean isExit;
                 return false;
             }
 
-        }
-        else {
+        } else {
             return super.onKeyDown(keyCode, event);
         }
     }

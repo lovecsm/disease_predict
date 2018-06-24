@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "E:\\StudioProjects\\Helloworld\\app\\build\\intermediates\\res\\merged\\debug\\menu\\toolbar.xml",
+        "source": "E:\\StudioProjects\\Helloworld\\app\\src\\main\\res\\menu\\toolbar.xml"
+    },
+    {
+        "merged": "E:\\StudioProjects\\Helloworld\\app\\build\\intermediates\\res\\merged\\debug\\menu\\nav_menu.xml",
+        "source": "E:\\StudioProjects\\Helloworld\\app\\src\\main\\res\\menu\\nav_menu.xml"
+    }
+]
