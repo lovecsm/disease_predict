@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">我的测试</string>
+    <string name="toolbar_name">疾病预测</string>
+    <string name="predict">疾病预测</string>
+    <string name="ask_doctor">咨询医师</string>
+    <string name="disease_find">疾病查询</string>
+    <string name="health_knowledge">养身知识</string>
+    <string name="about">关于</string>
+    <string name="find_what">请输入你要搜索的内容...</string>
+    <string name="about_appname">疾病预测Android Client</string>
+    <string name="about_version">Version:1.0 By Joe</string>
+    <string name="author">本app由邓希开发</string>
+    <string name="contact">联系作者</string>
+    <string name="introduce">软件介绍</string>
+    <string name="start_hello">Developed by Dengxi of GMC.</string>
+</resources>
