@@ -80,7 +80,7 @@ public class HelloWorldActivity extends AppCompatActivity {
                     case R.id.nav_knowledge:
                         //养身知识
                         if (toolbar != null) {
-                            toolbar.setTitle("养身知识");
+                            toolbar.setTitle("养生知识");
                             toolbar.setSubtitle("保养身心预防疾病");
                         }
                         replaceFragment(new HealthKnowledge());
