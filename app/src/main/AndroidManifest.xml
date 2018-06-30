@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.asus.helloworld">
     <application
+        android:name="com.example.asus.helloworld.MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/toolbar_name"
@@ -17,6 +18,8 @@
         <activity android:name=".FindByNetwork"></activity>
         <activity android:name=".HelloWorldActivity"
             android:windowSoftInputMode="adjustPan"></activity>
+        <activity android:name=".HealthSecondActivity"></activity>
+        <activity android:name=".EssayDetail"></activity>
     </application>
     <uses-permission android:name="android.permission.INTERNET" />
 

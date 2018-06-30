@@ -1,6 +1,8 @@
 package com.example.asus.helloworld;
 
 
+import android.content.Context;
+import android.content.Intent;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.design.widget.NavigationView;
@@ -50,7 +52,7 @@ public class HelloWorldActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(MenuItem item) {
                 switch (item.getItemId()) {
                     case R.id.nav_predict:
-                        //TODO:预测疾病
+                        //预测疾病
                         if (toolbar != null) {
                             toolbar.setTitle("疾病预测");
                             toolbar.setSubtitle("依据症状预测疾病");
@@ -59,7 +61,7 @@ public class HelloWorldActivity extends AppCompatActivity {
                         web_progress_bar.setVisibility(View.GONE);//进度条消失
                         break;
                     case R.id.nav_ask:
-                        //TODO:咨询医师
+                        //咨询医师
                         if (toolbar != null) {
                             toolbar.setTitle("咨询医师");
                             toolbar.setSubtitle("在线名医快速问诊");
@@ -67,7 +69,7 @@ public class HelloWorldActivity extends AppCompatActivity {
                         replaceFragment(new AskFragment());
                         break;
                     case R.id.nav_find:
-                        //TODO:疾病查询
+                        //疾病查询
                         if (toolbar != null) {
                             toolbar.setTitle("疾病查询");
                             toolbar.setSubtitle("疑难杂症在这里查");
@@ -76,7 +78,7 @@ public class HelloWorldActivity extends AppCompatActivity {
                         web_progress_bar.setVisibility(View.GONE);//进度条消失
                         break;
                     case R.id.nav_knowledge:
-                        //TODO:养身知识
+                        //养身知识
                         if (toolbar != null) {
                             toolbar.setTitle("养身知识");
                             toolbar.setSubtitle("保养身心预防疾病");
@@ -85,7 +87,7 @@ public class HelloWorldActivity extends AppCompatActivity {
                         web_progress_bar.setVisibility(View.GONE);//进度条消失
                         break;
                     case R.id.nav_about:
-                        //TODO:关于
+                        //关于
                         if (toolbar != null) {
                             toolbar.setTitle("疾病预测");
                             toolbar.setSubtitle("关于作者");

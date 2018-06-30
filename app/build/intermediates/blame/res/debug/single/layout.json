@@ -1,11 +1,11 @@
 [
     {
-        "merged": "E:\\StudioProjects\\Helloworld\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
-        "source": "C:\\Users\\ASUS\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0-alpha1.aar\\21f0890f78a3696f806fd0d940c93682\\res\\layout\\abc_action_bar_up_container.xml"
-    },
-    {
         "merged": "E:\\StudioProjects\\Helloworld\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_action_tombstone.xml",
         "source": "C:\\Users\\ASUS\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0-alpha1.aar\\21f0890f78a3696f806fd0d940c93682\\res\\layout\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "E:\\StudioProjects\\Helloworld\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
+        "source": "C:\\Users\\ASUS\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0-alpha1.aar\\21f0890f78a3696f806fd0d940c93682\\res\\layout\\abc_action_bar_up_container.xml"
     },
     {
         "merged": "E:\\StudioProjects\\Helloworld\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_expanded_menu_layout.xml",
@@ -30,6 +30,10 @@
     {
         "merged": "E:\\StudioProjects\\Helloworld\\app\\build\\intermediates\\res\\merged\\debug\\layout\\start_app.xml",
         "source": "E:\\StudioProjects\\Helloworld\\app\\src\\main\\res\\layout\\start_app.xml"
+    },
+    {
+        "merged": "E:\\StudioProjects\\Helloworld\\app\\build\\intermediates\\res\\merged\\debug\\layout\\each_health_second_item.xml",
+        "source": "E:\\StudioProjects\\Helloworld\\app\\src\\main\\res\\layout\\each_health_second_item.xml"
     },
     {
         "merged": "E:\\StudioProjects\\Helloworld\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
@@ -64,8 +68,16 @@
         "source": "C:\\Users\\ASUS\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.0.0-alpha1.aar\\4582c89b5878233a414fa35c84b2c4b9\\res\\layout\\design_navigation_item_separator.xml"
     },
     {
+        "merged": "E:\\StudioProjects\\Helloworld\\app\\build\\intermediates\\res\\merged\\debug\\layout\\health_second_fragment_right.xml",
+        "source": "E:\\StudioProjects\\Helloworld\\app\\src\\main\\res\\layout\\health_second_fragment_right.xml"
+    },
+    {
         "merged": "E:\\StudioProjects\\Helloworld\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_text.xml",
         "source": "C:\\Users\\ASUS\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.0.0-alpha1.aar\\4582c89b5878233a414fa35c84b2c4b9\\res\\layout\\design_layout_tab_text.xml"
+    },
+    {
+        "merged": "E:\\StudioProjects\\Helloworld\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_dynamic.xml",
+        "source": "E:\\StudioProjects\\Helloworld\\app\\src\\main\\res\\layout\\activity_dynamic.xml"
     },
     {
         "merged": "E:\\StudioProjects\\Helloworld\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines_media.xml",
@@ -120,6 +132,10 @@
         "source": "C:\\Users\\ASUS\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.0.0-alpha1.aar\\4582c89b5878233a414fa35c84b2c4b9\\res\\layout\\design_navigation_item.xml"
     },
     {
+        "merged": "E:\\StudioProjects\\Helloworld\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_image.xml",
+        "source": "E:\\StudioProjects\\Helloworld\\app\\src\\main\\res\\layout\\item_image.xml"
+    },
+    {
         "merged": "E:\\StudioProjects\\Helloworld\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_select_dialog_material.xml",
         "source": "C:\\Users\\ASUS\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0-alpha1.aar\\21f0890f78a3696f806fd0d940c93682\\res\\layout\\abc_select_dialog_material.xml"
     },
@@ -144,6 +160,10 @@
         "source": "C:\\Users\\ASUS\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.0.0-alpha1.aar\\4582c89b5878233a414fa35c84b2c4b9\\res\\layout\\design_menu_item_action_area.xml"
     },
     {
+        "merged": "E:\\StudioProjects\\Helloworld\\app\\build\\intermediates\\res\\merged\\debug\\layout\\each_item.xml",
+        "source": "E:\\StudioProjects\\Helloworld\\app\\src\\main\\res\\layout\\each_item.xml"
+    },
+    {
         "merged": "E:\\StudioProjects\\Helloworld\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_item_material.xml",
         "source": "C:\\Users\\ASUS\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0-alpha1.aar\\21f0890f78a3696f806fd0d940c93682\\res\\layout\\select_dialog_item_material.xml"
     },
@@ -160,12 +180,16 @@
         "source": "C:\\Users\\ASUS\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0-alpha1.aar\\21f0890f78a3696f806fd0d940c93682\\res\\layout\\abc_action_mode_close_item_material.xml"
     },
     {
-        "merged": "E:\\StudioProjects\\Helloworld\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
-        "source": "C:\\Users\\ASUS\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0-alpha1.aar\\21f0890f78a3696f806fd0d940c93682\\res\\layout\\abc_action_menu_item_layout.xml"
+        "merged": "E:\\StudioProjects\\Helloworld\\app\\build\\intermediates\\res\\merged\\debug\\layout\\health_second_fragment_left.xml",
+        "source": "E:\\StudioProjects\\Helloworld\\app\\src\\main\\res\\layout\\health_second_fragment_left.xml"
     },
     {
         "merged": "E:\\StudioProjects\\Helloworld\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_dialog_title_material.xml",
         "source": "C:\\Users\\ASUS\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0-alpha1.aar\\21f0890f78a3696f806fd0d940c93682\\res\\layout\\abc_dialog_title_material.xml"
+    },
+    {
+        "merged": "E:\\StudioProjects\\Helloworld\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
+        "source": "C:\\Users\\ASUS\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0-alpha1.aar\\21f0890f78a3696f806fd0d940c93682\\res\\layout\\abc_action_menu_item_layout.xml"
     },
     {
         "merged": "E:\\StudioProjects\\Helloworld\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media.xml",
@@ -232,6 +256,10 @@
         "source": "C:\\Users\\ASUS\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0-alpha1.aar\\21f0890f78a3696f806fd0d940c93682\\res\\layout\\abc_list_menu_item_icon.xml"
     },
     {
+        "merged": "E:\\StudioProjects\\Helloworld\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_text.xml",
+        "source": "E:\\StudioProjects\\Helloworld\\app\\src\\main\\res\\layout\\item_text.xml"
+    },
+    {
         "merged": "E:\\StudioProjects\\Helloworld\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple.xml",
         "source": "C:\\Users\\ASUS\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0-alpha1.aar\\21f0890f78a3696f806fd0d940c93682\\res\\layout\\abc_screen_simple.xml"
     },
@@ -250,5 +278,9 @@
     {
         "merged": "E:\\StudioProjects\\Helloworld\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar_include.xml",
         "source": "C:\\Users\\ASUS\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.0.0-alpha1.aar\\4582c89b5878233a414fa35c84b2c4b9\\res\\layout\\design_layout_snackbar_include.xml"
+    },
+    {
+        "merged": "E:\\StudioProjects\\Helloworld\\app\\build\\intermediates\\res\\merged\\debug\\layout\\health_second_activity.xml",
+        "source": "E:\\StudioProjects\\Helloworld\\app\\src\\main\\res\\layout\\health_second_activity.xml"
     }
 ]

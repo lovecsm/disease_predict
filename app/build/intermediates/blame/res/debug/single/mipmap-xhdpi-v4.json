@@ -4,6 +4,10 @@
         "source": "E:\\StudioProjects\\Helloworld\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
+        "merged": "E:\\StudioProjects\\Helloworld\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\nav_icon.png",
+        "source": "E:\\StudioProjects\\Helloworld\\app\\src\\main\\res\\mipmap-xhdpi\\nav_icon.png"
+    },
+    {
         "merged": "E:\\StudioProjects\\Helloworld\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi-v4\\ic_launcher_round.png",
         "source": "E:\\StudioProjects\\Helloworld\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
     }
