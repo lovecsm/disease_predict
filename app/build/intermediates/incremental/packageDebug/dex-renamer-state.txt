@@ -1,7 +1,7 @@
-#Fri Jun 29 22:06:01 CST 2018
-base.0=E\:\\StudioProjects\\Helloworld\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\10
+#Sun Jul 01 19:55:24 CST 2018
+base.0=E\:\\StudioProjects\\Helloworld\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\25
 renamed.1=classes2.dex
 renamed.0=classes.dex
-file.1=E\:\\StudioProjects\\Helloworld\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\11\\classes.dex
-base.1=E\:\\StudioProjects\\Helloworld\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\11
-file.0=E\:\\StudioProjects\\Helloworld\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\10\\classes.dex
+file.1=E\:\\StudioProjects\\Helloworld\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\24\\classes.dex
+base.1=E\:\\StudioProjects\\Helloworld\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\24
+file.0=E\:\\StudioProjects\\Helloworld\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\25\\classes.dex

@@ -142,7 +142,6 @@ public class EssayDetail extends AppCompatActivity {
     }
     //InputStream转Byte数组方法
     private static byte[] readStream(InputStream in) throws IOException {
-        // TODO: Implement this method
         //此处开始转换
         ByteArrayOutputStream swapStream = new ByteArrayOutputStream();
         byte[] buff = new byte[1024]; //buff用于存放循环读取的临时数据

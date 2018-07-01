@@ -3,9 +3,6 @@ package com.example.asus.helloworld;
 import android.app.Application;
 import android.content.Context;
 
-/**
- * Created by ASUS on 2018/6/26.
- */
 
 public class MyApplication extends Application {
 

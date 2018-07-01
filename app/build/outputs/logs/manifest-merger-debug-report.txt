@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from E:\StudioProjects\Helloworld\app\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from E:\StudioProjects\Helloworld\app\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from E:\StudioProjects\Helloworld\app\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from E:\StudioProjects\Helloworld\app\src\main\AndroidManifest.xml:2:1-26:12
+ADDED from E:\StudioProjects\Helloworld\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from E:\StudioProjects\Helloworld\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from E:\StudioProjects\Helloworld\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from E:\StudioProjects\Helloworld\app\src\main\AndroidManifest.xml:2:1-29:12
 MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-alpha1.aar\21f0890f78a3696f806fd0d940c93682\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\f5826568043795fdce70367a2a4d836d\AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:design:26.0.0-alpha1] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\design-26.0.0-alpha1.aar\4582c89b5878233a414fa35c84b2c4b9\AndroidManifest.xml:17:1-31:12
@@ -18,9 +18,9 @@ MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\ASUS\.g
 MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0-alpha1.aar\0c121344394353ae501b78a22d72fb9e\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-alpha1.aar\86c6db9068b4da86604258ace72806ac\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:cardview-v7:26.0.0-alpha1] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\cardview-v7-26.0.0-alpha1.aar\a46611567cd1df387cfa9f3dc306bad2\AndroidManifest.xml:17:1-28:12
-INJECTED from E:\StudioProjects\Helloworld\app\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from E:\StudioProjects\Helloworld\app\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from E:\StudioProjects\Helloworld\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from E:\StudioProjects\Helloworld\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from E:\StudioProjects\Helloworld\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from E:\StudioProjects\Helloworld\app\src\main\AndroidManifest.xml:2:1-29:12
 	package
 		ADDED from E:\StudioProjects\Helloworld\app\src\main\AndroidManifest.xml:3:5-42
 		INJECTED from E:\StudioProjects\Helloworld\app\src\main\AndroidManifest.xml
@@ -34,7 +34,7 @@ INJECTED from E:\StudioProjects\Helloworld\app\src\main\AndroidManifest.xml:2:1-
 	xmlns:android
 		ADDED from E:\StudioProjects\Helloworld\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from E:\StudioProjects\Helloworld\app\src\main\AndroidManifest.xml:4:5-23:19
+ADDED from E:\StudioProjects\Helloworld\app\src\main\AndroidManifest.xml:4:5-24:19
 MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-alpha1.aar\21f0890f78a3696f806fd0d940c93682\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-alpha1.aar\21f0890f78a3696f806fd0d940c93682\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\ASUS\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\f5826568043795fdce70367a2a4d836d\AndroidManifest.xml:9:5-20
@@ -107,10 +107,22 @@ activity#com.example.asus.helloworld.EssayDetail
 ADDED from E:\StudioProjects\Helloworld\app\src\main\AndroidManifest.xml:22:9-58
 	android:name
 		ADDED from E:\StudioProjects\Helloworld\app\src\main\AndroidManifest.xml:22:19-46
-uses-permission#android.permission.INTERNET
-ADDED from E:\StudioProjects\Helloworld\app\src\main\AndroidManifest.xml:24:5-67
+activity#com.example.asus.helloworld.PredictActivity
+ADDED from E:\StudioProjects\Helloworld\app\src\main\AndroidManifest.xml:23:9-62
 	android:name
-		ADDED from E:\StudioProjects\Helloworld\app\src\main\AndroidManifest.xml:24:22-64
+		ADDED from E:\StudioProjects\Helloworld\app\src\main\AndroidManifest.xml:23:19-50
+uses-permission#android.permission.INTERNET
+ADDED from E:\StudioProjects\Helloworld\app\src\main\AndroidManifest.xml:25:5-67
+	android:name
+		ADDED from E:\StudioProjects\Helloworld\app\src\main\AndroidManifest.xml:25:22-64
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from E:\StudioProjects\Helloworld\app\src\main\AndroidManifest.xml:26:5-81
+	android:name
+		ADDED from E:\StudioProjects\Helloworld\app\src\main\AndroidManifest.xml:26:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from E:\StudioProjects\Helloworld\app\src\main\AndroidManifest.xml:27:5-80
+	android:name
+		ADDED from E:\StudioProjects\Helloworld\app\src\main\AndroidManifest.xml:27:22-77
 uses-sdk
 INJECTED from E:\StudioProjects\Helloworld\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from E:\StudioProjects\Helloworld\app\src\main\AndroidManifest.xml

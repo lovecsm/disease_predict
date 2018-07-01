@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<FrameLayout
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:orientation="horizontal">
+    <Button
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:text="@string/back"
+        android:layout_gravity="start"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:id="@+id/back_button"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:text="@string/symbol"/>
+    <Button
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:text="@string/commit"
+        android:layout_gravity="end"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:id="@+id/commit_button"/>
+</FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center">
+        <CheckBox
+            android:id="@+id/weakness"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:button="@null"
+            android:background="@drawable/selector_checkbox_bg"
+            android:textColor="@drawable/selector_text_color"
+            android:text="下肢无力" />
+
+        <CheckBox
+            android:id="@+id/hematochezia"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:background="@drawable/selector_checkbox_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="便血"
+            android:layout_marginStart="10dp"
+            android:textColor="@drawable/selector_text_color"
+            android:layout_alignBottom="@+id/weakness"
+            android:layout_toEndOf="@+id/weakness" />
+
+        <CheckBox
+            android:id="@+id/cold"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/selector_checkbox_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="冷汗"
+            android:textColor="@drawable/selector_text_color"
+            android:layout_alignBottom="@+id/weakness"
+            android:layout_toEndOf="@+id/hematochezia" />
+
+        <CheckBox
+            android:id="@+id/acid"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/selector_checkbox_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="反酸"
+            android:textColor="@drawable/selector_text_color"
+            android:layout_alignBottom="@+id/weakness"
+            android:layout_toEndOf="@+id/cold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center">
+        <CheckBox
+            android:id="@+id/fever"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:button="@null"
+            android:background="@drawable/selector_checkbox_bg"
+            android:textColor="@drawable/selector_text_color"
+            android:text="发烧" />
+
+        <CheckBox
+            android:id="@+id/emesis"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:background="@drawable/selector_checkbox_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="呕吐"
+            android:layout_marginStart="10dp"
+            android:textColor="@drawable/selector_text_color"
+            android:layout_alignBottom="@+id/fever"
+            android:layout_toEndOf="@+id/fever" />
+
+        <CheckBox
+            android:id="@+id/coldness"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:background="@drawable/selector_checkbox_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="四肢发冷"
+            android:layout_marginStart="10dp"
+            android:textColor="@drawable/selector_text_color"
+            android:layout_alignBottom="@+id/fever"
+            android:layout_toEndOf="@+id/emesis" />
+
+        <CheckBox
+            android:id="@+id/ulcer"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:background="@drawable/selector_checkbox_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="幽门管溃疡"
+            android:layout_marginStart="10dp"
+            android:textColor="@drawable/selector_text_color"
+            android:layout_alignBottom="@+id/fever"
+            android:layout_toEndOf="@+id/coldness" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center">
+        <CheckBox
+            android:id="@+id/nausea"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:button="@null"
+            android:background="@drawable/selector_checkbox_bg"
+            android:textColor="@drawable/selector_text_color"
+            android:text="恶心" />
+
+        <CheckBox
+            android:id="@+id/tract"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:background="@drawable/selector_checkbox_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="消化道穿孔"
+            android:layout_marginStart="10dp"
+            android:textColor="@drawable/selector_text_color"
+            android:layout_alignBottom="@+id/nausea"
+            android:layout_toEndOf="@+id/nausea" />
+
+        <CheckBox
+            android:id="@+id/ventosity"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:background="@drawable/selector_checkbox_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="腹胀"
+            android:layout_marginStart="10dp"
+            android:textColor="@drawable/selector_text_color"
+            android:layout_alignBottom="@+id/nausea"
+            android:layout_toEndOf="@+id/tract" />
+
+        <CheckBox
+            android:id="@+id/pallor"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:background="@drawable/selector_checkbox_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="面色苍白"
+            android:layout_marginStart="10dp"
+            android:textColor="@drawable/selector_text_color"
+            android:layout_alignBottom="@+id/nausea"
+            android:layout_toEndOf="@+id/ventosity" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center">
+        <CheckBox
+            android:id="@+id/collywobbles"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:button="@null"
+            android:background="@drawable/selector_checkbox_bg"
+            android:textColor="@drawable/selector_text_color"
+            android:text="肚子疼" />
+
+        <CheckBox
+            android:id="@+id/mass"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:background="@drawable/selector_checkbox_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="腹部肿块"
+            android:layout_marginStart="10dp"
+            android:textColor="@drawable/selector_text_color"
+            android:layout_alignBottom="@+id/collywobbles"
+            android:layout_toEndOf="@+id/collywobbles" />
+
+        <CheckBox
+            android:id="@+id/stomachache"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:background="@drawable/selector_checkbox_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="胃疼"
+            android:layout_marginStart="10dp"
+            android:textColor="@drawable/selector_text_color"
+            android:layout_alignBottom="@+id/collywobbles"
+            android:layout_toEndOf="@+id/mass" />
+
+        <CheckBox
+            android:id="@+id/bleeding"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:background="@drawable/selector_checkbox_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="胃肠道出血"
+            android:layout_marginStart="10dp"
+            android:textColor="@drawable/selector_text_color"
+            android:layout_alignBottom="@+id/collywobbles"
+            android:layout_toEndOf="@+id/stomachache" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center">
+    <CheckBox
+        android:id="@+id/microStomachache"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:button="@null"
+        android:background="@drawable/selector_checkbox_bg"
+        android:textColor="@drawable/selector_text_color"
+        android:text="胃部隐痛" />
+
+    <CheckBox
+        android:id="@+id/crater"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:background="@drawable/selector_checkbox_bg"
+        android:button="@null"
+        android:gravity="center"
+        android:text="溃疡外观呈火山口样"
+        android:layout_marginStart="10dp"
+        android:textColor="@drawable/selector_text_color"
+        android:layout_alignBottom="@+id/microStomachache"
+        android:layout_toEndOf="@+id/microStomachache" />
+
+        <CheckBox
+            android:id="@+id/fibrillation"
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:background="@drawable/selector_checkbox_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="肌肉纤维震颤"
+            android:layout_marginStart="10dp"
+            android:textColor="@drawable/selector_text_color"
+            android:layout_alignBottom="@+id/microStomachache"
+            android:layout_toEndOf="@+id/crater" />
+    </RelativeLayout>
+</LinearLayout>

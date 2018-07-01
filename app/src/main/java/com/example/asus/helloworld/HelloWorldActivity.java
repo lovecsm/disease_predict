@@ -1,8 +1,11 @@
 package com.example.asus.helloworld;
 
 
-import android.content.Context;
-import android.content.Intent;
+import android.Manifest;
+import android.content.DialogInterface;
+import android.content.pm.PackageManager;
+import android.os.Build;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.design.widget.NavigationView;
@@ -10,27 +13,37 @@ import android.support.v4.app.Fragment;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
+import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
+
+import static com.example.asus.helloworld.FileReadWrite.saveFile;
 
 public class HelloWorldActivity extends AppCompatActivity {
     private DrawerLayout mDrawerLayout;
     private ProgressBar web_progress_bar;
+    private boolean firstLaunch = false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         /*Window window = getWindow();
         window.addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);*/
         setContentView(R.layout.activity_hello_world);
+        if(null==FileReadWrite.getIp("server.ip")){
+            firstLaunch = true;
+        }
+        if(firstLaunch){
+            askPermission("注意","为了您能够正常使用，我们需要在您的设备上存取相关数据文件，请放心，这不会损坏您的设备。接下来请您点击允许。");
+        }
         final Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -78,7 +91,7 @@ public class HelloWorldActivity extends AppCompatActivity {
                         web_progress_bar.setVisibility(View.GONE);//进度条消失
                         break;
                     case R.id.nav_knowledge:
-                        //养身知识
+                        //养生知识
                         if (toolbar != null) {
                             toolbar.setTitle("养生知识");
                             toolbar.setSubtitle("保养身心预防疾病");
@@ -119,9 +132,10 @@ public class HelloWorldActivity extends AppCompatActivity {
                         show();
                 break;
             case R.id.exit:
-                Toast.makeText(this, "已退出", Toast.LENGTH_SHORT).
-                        show();
                 finish();
+                break;
+            case R.id.setting:
+                alertEdit();    //弹出IP地址编辑框
                 break;
             case android.R.id.home:
                 mDrawerLayout.openDrawer(GravityCompat.START);
@@ -137,6 +151,7 @@ public class HelloWorldActivity extends AppCompatActivity {
         transaction.replace(R.id.right_layout, fragment);
         transaction.commit();
     }
+
 
     boolean isExit;
 
@@ -172,5 +187,49 @@ public class HelloWorldActivity extends AppCompatActivity {
         } else {
             return super.onKeyDown(keyCode, event);
         }
+    }
+
+    public void alertEdit(){
+        final EditText et = new EditText(HelloWorldActivity.this);
+        final AlertDialog show = new AlertDialog.Builder(HelloWorldActivity.this).setTitle("请输入服务器IP")
+                .setIcon(android.R.drawable.sym_def_app_icon)
+                .setView(et)
+                .setPositiveButton("确定", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        //按下确定键后的事件
+                        saveFile(et.getText().toString(), "server.ip");  //保存IP地址到文件
+                        Snackbar.make(getCurrentFocus(),"保存成功",Snackbar.LENGTH_SHORT).show();
+                        Log.i("file","保存文件");
+                    }
+                }).setNegativeButton("取消", null).show();
+    }
+    //请求读写权限
+    private void getPermission(){
+        if (Build.VERSION.SDK_INT >= 23) {
+            int REQUEST_CODE_CONTACT = 101;
+            String[] permissions = {Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.READ_EXTERNAL_STORAGE};
+            //验证是否许可权限
+            for (String str : permissions) {
+                if (this.checkSelfPermission(str) != PackageManager.PERMISSION_GRANTED) {
+                    //申请权限
+                    this.requestPermissions(permissions, REQUEST_CODE_CONTACT);
+                }
+            }
+        }
+    }
+
+    public void askPermission(String title, String msg) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(HelloWorldActivity.this);
+        builder.setTitle(title);
+        builder.setMessage(msg);
+        builder.setCancelable(false);
+        builder.setPositiveButton("确定", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                getPermission();
+            }
+        });
+        builder.show();
     }
 }

@@ -70,7 +70,7 @@ public class AboutFragment extends Fragment {
     }
 
     //弹窗
-    public void dialog(String title, String msg) {
+    private void dialog(String title, String msg) {
         AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
         builder.setTitle(title);
         builder.setMessage(msg);

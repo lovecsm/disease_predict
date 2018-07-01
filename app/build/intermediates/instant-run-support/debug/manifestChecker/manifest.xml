@@ -9,6 +9,8 @@
         android:targetSdkVersion="28" />
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <meta-data
         android:name="android.support.VERSION"
@@ -37,6 +39,7 @@
             android:windowSoftInputMode="adjustPan" />
         <activity android:name="com.example.asus.helloworld.HealthSecondActivity" />
         <activity android:name="com.example.asus.helloworld.EssayDetail" />
+        <activity android:name="com.example.asus.helloworld.PredictActivity" />
 
         <provider
             android:name="com.android.tools.fd.runtime.InstantRunContentProvider"

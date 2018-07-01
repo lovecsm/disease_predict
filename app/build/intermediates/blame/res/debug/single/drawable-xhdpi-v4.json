@@ -4,12 +4,12 @@
         "source": "E:\\StudioProjects\\Helloworld\\app\\src\\main\\res\\drawable-xhdpi\\health_people.png"
     },
     {
-        "merged": "E:\\StudioProjects\\Helloworld\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\notification_bg_normal_pressed.9.png",
-        "source": "C:\\Users\\ASUS\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0-alpha1.aar\\21f0890f78a3696f806fd0d940c93682\\res\\drawable-xhdpi-v4\\notification_bg_normal_pressed.9.png"
+        "merged": "E:\\StudioProjects\\Helloworld\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_mouth.png",
+        "source": "E:\\StudioProjects\\Helloworld\\app\\src\\main\\res\\drawable-xhdpi\\ic_mouth.png"
     },
     {
-        "merged": "E:\\StudioProjects\\Helloworld\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\img_food.png",
-        "source": "E:\\StudioProjects\\Helloworld\\app\\src\\main\\res\\drawable-xhdpi\\img_food.png"
+        "merged": "E:\\StudioProjects\\Helloworld\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\notification_bg_normal_pressed.9.png",
+        "source": "C:\\Users\\ASUS\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0-alpha1.aar\\21f0890f78a3696f806fd0d940c93682\\res\\drawable-xhdpi-v4\\notification_bg_normal_pressed.9.png"
     },
     {
         "merged": "E:\\StudioProjects\\Helloworld\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png",
@@ -36,6 +36,10 @@
         "source": "C:\\Users\\ASUS\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0-alpha1.aar\\21f0890f78a3696f806fd0d940c93682\\res\\drawable-xhdpi-v4\\abc_switch_track_mtrl_alpha.9.png"
     },
     {
+        "merged": "E:\\StudioProjects\\Helloworld\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_liver.png",
+        "source": "E:\\StudioProjects\\Helloworld\\app\\src\\main\\res\\drawable-xhdpi\\ic_liver.png"
+    },
+    {
         "merged": "E:\\StudioProjects\\Helloworld\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_popup_background_mtrl_mult.9.png",
         "source": "C:\\Users\\ASUS\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0-alpha1.aar\\21f0890f78a3696f806fd0d940c93682\\res\\drawable-xhdpi-v4\\abc_popup_background_mtrl_mult.9.png"
     },
@@ -44,12 +48,12 @@
         "source": "C:\\Users\\ASUS\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0-alpha1.aar\\21f0890f78a3696f806fd0d940c93682\\res\\drawable-xhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
     },
     {
-        "merged": "E:\\StudioProjects\\Helloworld\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\chinese_medicine.jpg",
-        "source": "E:\\StudioProjects\\Helloworld\\app\\src\\main\\res\\drawable-xhdpi\\chinese_medicine.jpg"
-    },
-    {
         "merged": "E:\\StudioProjects\\Helloworld\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_list_longpressed_holo.9.png",
         "source": "C:\\Users\\ASUS\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0-alpha1.aar\\21f0890f78a3696f806fd0d940c93682\\res\\drawable-xhdpi-v4\\abc_list_longpressed_holo.9.png"
+    },
+    {
+        "merged": "E:\\StudioProjects\\Helloworld\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_skin.png",
+        "source": "E:\\StudioProjects\\Helloworld\\app\\src\\main\\res\\drawable-xhdpi\\ic_skin.png"
     },
     {
         "merged": "E:\\StudioProjects\\Helloworld\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_text_select_handle_left_mtrl_light.png",
@@ -62,10 +66,6 @@
     {
         "merged": "E:\\StudioProjects\\Helloworld\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png",
         "source": "C:\\Users\\ASUS\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0-alpha1.aar\\21f0890f78a3696f806fd0d940c93682\\res\\drawable-xhdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png"
-    },
-    {
-        "merged": "E:\\StudioProjects\\Helloworld\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\knowledge.png",
-        "source": "E:\\StudioProjects\\Helloworld\\app\\src\\main\\res\\drawable-xhdpi\\knowledge.png"
     },
     {
         "merged": "E:\\StudioProjects\\Helloworld\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png",
@@ -134,6 +134,10 @@
     {
         "merged": "E:\\StudioProjects\\Helloworld\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\health_nutrition.png",
         "source": "E:\\StudioProjects\\Helloworld\\app\\src\\main\\res\\drawable-xhdpi\\health_nutrition.png"
+    },
+    {
+        "merged": "E:\\StudioProjects\\Helloworld\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_intestine.png",
+        "source": "E:\\StudioProjects\\Helloworld\\app\\src\\main\\res\\drawable-xhdpi\\ic_intestine.png"
     },
     {
         "merged": "E:\\StudioProjects\\Helloworld\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_btn_check_to_on_mtrl_015.png",
@@ -208,6 +212,10 @@
         "source": "C:\\Users\\ASUS\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0-alpha1.aar\\21f0890f78a3696f806fd0d940c93682\\res\\drawable-xhdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
     },
     {
+        "merged": "E:\\StudioProjects\\Helloworld\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_bone.png",
+        "source": "E:\\StudioProjects\\Helloworld\\app\\src\\main\\res\\drawable-xhdpi\\ic_bone.png"
+    },
+    {
         "merged": "E:\\StudioProjects\\Helloworld\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_list_selector_disabled_holo_light.9.png",
         "source": "C:\\Users\\ASUS\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0-alpha1.aar\\21f0890f78a3696f806fd0d940c93682\\res\\drawable-xhdpi-v4\\abc_list_selector_disabled_holo_light.9.png"
     },
@@ -224,8 +232,20 @@
         "source": "C:\\Users\\ASUS\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0-alpha1.aar\\21f0890f78a3696f806fd0d940c93682\\res\\drawable-xhdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
+        "merged": "E:\\StudioProjects\\Helloworld\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_stomach.png",
+        "source": "E:\\StudioProjects\\Helloworld\\app\\src\\main\\res\\drawable-xhdpi\\ic_stomach.png"
+    },
+    {
+        "merged": "E:\\StudioProjects\\Helloworld\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_urinary.png",
+        "source": "E:\\StudioProjects\\Helloworld\\app\\src\\main\\res\\drawable-xhdpi\\ic_urinary.png"
+    },
+    {
         "merged": "E:\\StudioProjects\\Helloworld\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png",
         "source": "C:\\Users\\ASUS\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0-alpha1.aar\\21f0890f78a3696f806fd0d940c93682\\res\\drawable-xhdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "E:\\StudioProjects\\Helloworld\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_five_organs.png",
+        "source": "E:\\StudioProjects\\Helloworld\\app\\src\\main\\res\\drawable-xhdpi\\ic_five_organs.png"
     },
     {
         "merged": "E:\\StudioProjects\\Helloworld\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_text_select_handle_right_mtrl_light.png",
@@ -234,6 +254,14 @@
     {
         "merged": "E:\\StudioProjects\\Helloworld\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png",
         "source": "C:\\Users\\ASUS\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0-alpha1.aar\\21f0890f78a3696f806fd0d940c93682\\res\\drawable-xhdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "E:\\StudioProjects\\Helloworld\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_heart_blood.png",
+        "source": "E:\\StudioProjects\\Helloworld\\app\\src\\main\\res\\drawable-xhdpi\\ic_heart_blood.png"
+    },
+    {
+        "merged": "E:\\StudioProjects\\Helloworld\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_spirit.png",
+        "source": "E:\\StudioProjects\\Helloworld\\app\\src\\main\\res\\drawable-xhdpi\\ic_spirit.png"
     },
     {
         "merged": "E:\\StudioProjects\\Helloworld\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png",
