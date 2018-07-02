@@ -7,6 +7,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Looper;
 import android.support.annotation.Nullable;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AlertDialog;
 import android.util.Log;
@@ -288,6 +289,7 @@ public class PredictStomachFragment extends Fragment {
         for (int i = 0; i < 19; i++) {      //构建症状
             userSymbol += (sign[i] + "");
         }
+        Snackbar.make(getView(), "连接中", Snackbar.LENGTH_SHORT).show();
         sendRequest();
     }
 
@@ -318,7 +320,7 @@ public class PredictStomachFragment extends Fragment {
                         connection.setConnectTimeout(8000);
                         connection.setReadTimeout(8000);
                         //向服务器发送数据
-                        Toast.makeText(getActivity(),"连接中",Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(getActivity(),"连接中",Toast.LENGTH_SHORT).show();
                         DataOutputStream out = new DataOutputStream(connection.getOutputStream());
                         out.writeBytes("appData="+appData);
                         //获取服务器返回的数据

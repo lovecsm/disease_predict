@@ -8,7 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Window;
 import android.view.WindowManager;
 
-public class startApp extends AppCompatActivity {
+public class StartApp extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,7 +27,7 @@ public class startApp extends AppCompatActivity {
     };
 
     public void getHome() {
-        Intent intent = new Intent(startApp.this, HelloWorldActivity.class);
+        Intent intent = new Intent(StartApp.this, HelloWorldActivity.class);
         startActivity(intent);
         finish();
     }

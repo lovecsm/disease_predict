@@ -133,8 +133,8 @@ public class EssayDetail extends AppCompatActivity {
                 isText = true;                                          //文本内容
             }
             //对正文进行图文过滤
-            String temp = matcher.group(2).replaceAll("(&rsquo;)|(&lsquo;)|(&rdquo;)|(&nbsp;)|(&ldquo;)|(&hellip;)|(<strong>)|(<p>)","");
-            temp = temp.replaceAll("(</strong>)", "\n");
+            String temp = matcher.group(2).replaceAll("(&[a-zA-Z]+?;)|(<[a-zA-Z]+?>)", "");
+            temp = temp.replaceAll("(</[a-zA-Z]+?>)|(<img.*\")", "");
             addViewItem(null,temp);
         }
         if (childIndex>5)
