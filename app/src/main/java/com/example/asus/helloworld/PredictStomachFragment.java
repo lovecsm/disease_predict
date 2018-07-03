@@ -301,7 +301,7 @@ public class PredictStomachFragment extends Fragment {
             return;
         }
 		//增加一个对IP地址合法性的判断
-        String testIp = "((25[0-5]|2[0-4]\\d|((1\\d{2})|([1-9]?\\d)))\\.){3}(25[0-5]|2[0-4]\\d|((1\\d{2})|([1-9]?\\d))):\\d+";
+        String testIp = "(((25[0-5]|2[0-4]\\d|((1\\d{2})|([1-9]?\\d)))\\.){3}(25[0-5]|2[0-4]\\d|((1\\d{2})|([1-9]?\\d))):\\d+)|(http.*)";
         Pattern p = Pattern.compile(testIp);
         Matcher matcher = p.matcher(ip);
         if (matcher.find()) {
