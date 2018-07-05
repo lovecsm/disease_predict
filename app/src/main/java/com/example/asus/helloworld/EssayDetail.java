@@ -23,7 +23,7 @@ import java.util.regex.Pattern;
 
 public class EssayDetail extends AppCompatActivity {
     //装载所有动态添加的Item的LinearLayout容器
-    private LinearLayout addHotelNameView;
+    private LinearLayout addItemView;
     private int childIndex = 0;//定位每一个item
     private boolean isText;
 
@@ -31,7 +31,7 @@ public class EssayDetail extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dynamic);
-        addHotelNameView = (LinearLayout) findViewById(R.id.ll_addView);
+        addItemView = (LinearLayout) findViewById(R.id.ll_addView);
         Intent intent = this.getIntent();
         String url = intent.getStringExtra("seeMore");
         Log.i("内容",url);
@@ -159,12 +159,12 @@ public class EssayDetail extends AppCompatActivity {
         TextView textView = null;
         if (isText) {                                                   //是文本则添加TextView布局
             View targetView = View.inflate(this, R.layout.item_text, null);
-            addHotelNameView.addView(targetView);
+            addItemView.addView(targetView);
         } else {                                                        //是图像则添加ImageView布局
             View targetView = View.inflate(this, R.layout.item_image, null);
-            addHotelNameView.addView(targetView);
+            addItemView.addView(targetView);
         }
-        View childAt = addHotelNameView.getChildAt(childIndex);         //获取控件ID
+        View childAt = addItemView.getChildAt(childIndex);         //获取控件ID
         childIndex++;
         if (isText) {
             textView = (TextView) childAt.findViewById(R.id.instance_text); //添加文本实体
